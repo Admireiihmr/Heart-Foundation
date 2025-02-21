@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Care Connect</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #disedildown{
+            margin-top: 200px;
+            font-size: 35px;
+            color: red;
+        }
+        body {
+            background-color: white;
+            display: flex;
+            align-items: center;
+        }
+        .container {
+            background-color: pink;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .left-section {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .right-section {
+            padding: 20px;
+        }
+        h2 {
+            color: #d10000;
+            text-align: center;
+        }
+        .red {
+            color: #a00000;
+        }
+        button {
+            width: 100%;
+            background-color: #d10000;
+            color: white;
+        }
+        button:hover {
+            background-color: #a00000;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        .content {
+            background-color: #f2d5db;
+            padding: 30px;
+            border-radius: 5px;
+            width: 350px;
+        }
+        .title {
+            font-size: 30px; /* Increase size */
+            font-weight: bold;
+        }
+        .subtitle {
+            font-size: 12px;
+            color: #444;
+            display: block;
+        }
+        .menu {
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 400px ;
+            margin-top: -140px;
+        }
+        .menu-item {
+            background-color: #e7ffe7;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            width: 100px;
+        }
+        .webImageHead{
+            margin-top: 20px;
+            background-color: #e6abb7;
+            font-size: 25px;
+        }
+        .webImage{
+            margin-top: 20px;
+        }
+        .dilsedil{
+            display: flex;
+            margin-left: 0px;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .vision{
+            margin-top: 10px;
+            margin-bottom: 100px;
+        }
+        .img-vision{
+            margin-top: 30px;
+        }
+        .visiontext{
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .mission{
+            margin-top: 10px;
+        }
+        .img-mission{
+            margin-top: 30px;
+        }
+        .missiontext{
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .headlogo{
+            display: flex;
+            margin-right: 350px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4 p-4">
+        <div class="row">
+            <div class="col-md-6 left-section">
+                <div class="headlogo">
+                   <img src="hhif logo123.png" alt="" width="200" height="150">
+                   <img src="cropped-IIHMR-Logo-03.png" alt="" width="250" height="90" style="margin-top: 30px;">
+                </div>
+                <div class="content">
+                    <h7 class="title">Heart Care Connect</h7>
+                    <span class="subtitle">A Digital Collaboration between IIHMR Bangalore and Heart Health India Foundation</span>
+                              
+                </div>
+                <div class="menu">
+                    <span class="menu-item">Awareness</span>
+                    <span class="menu-item">Emergency</span>
+                    <span class="menu-item">Coaching</span>
+                </div>    
+                
+                <img src="webimagehhif.avif" alt="" class="webImage">
+                <h5 class="webImageHead"> Patient Support and Community 
+                    Management System </h5>
+                    <br>
+                <div class="dilsedil">
+                    <h3 class="red" id="disedildown">Dil Se Dil Ki Baat</h3>
+                ,   <img src="dil se dil tak.png" alt="" class="disedilaImage">
+                </div>
+                <div class="vision">
+                    <h3 class="text-success">OUR VISION</h3>
+                    <img src="our missionhhif (1).avif" alt="" class="img-vision">
+                    <p class="visiontext">Empowering individuals to live a safe and heart-healthy life.</p>
+                </div>
+                <div class="mission">
+                    <h3 class="text-success">OUR MISSION</h3>
+                    <img src="our missionhhif (1).avif" alt="" class="img-mission"> 
+                    <p class="missiontext"> To transform heart health by educating 
+                        and empowering individuals, providing 
+                        support to those in need, researching 
+                        and advocating for patient-centric 
+                        ecosystem</p>
+                </div>
+            </div>
+            <div class="col-md-6 right-section">
+                <h2>Patient Registration Form</h2>
+                <form id="patientForm">
+                    <div class="mb-3">
+                        <label class="form-label">First Name</label>
+                        <input type="text" class="form-control" name="first-name" maxlength="15">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Middle Name</label>
+                        <input type="text" class="form-control" name="middle-name" maxlength="15">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-control" name="last-name" maxlength="15">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Age</label>
+                        <input type="number" class="form-control" name="age">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Gender</label>
+                        <div class="form-check">
+                            <input type="radio" name="gender" class="form-check-input" value="Male"> Male
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="gender" class="form-check-input" value="Female"> Female
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="gender" class="form-check-input" value="Other"> Other
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Contact No</label>
+                        <input type="text" class="form-control" name="contact">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email ID (Optional)</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">City</label>
+                        <input type="text" class="form-control" name="city">
+                     </div>
+
+                     <div class="mb-3">
+                        <label class="form-label"> State</label>
+                        <input type="text" class="form-control" name="state">
+                     </div>
+
+                     <div class="mb-3">
+                        <label class="form-label">How did you come to know about Heart Health India Foundation?</label>
+                        <div class="form-check">
+                            <input type="radio" name="enroll1" class="form-check-input" value="Social Media" id="socialMediaRadio"> Social Media
+                        </div>
+                        <select id="socialMediaDropdown" class="form-control mt-2" style="display: none;">
+                            <option value="">Select Platform</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Youtube">Youtube</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                        </select>
+                        <div class="form-check">
+                            <input type="radio" name="enroll1" class="form-check-input" value="Event"> Event
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="enroll1" class="form-check-input" value=" referral"> referral
+                        </div> 
+                    </div>
+                     
+
+
+                 
+                    <div class="mb-3">
+                        <label class="form-label">2.Are you enrolling for self or a relative?</label>
+                        <div class="form-check">
+                            <input type="radio" name="enroll2" class="form-check-input" value="Self"> Self
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="enroll2" class="form-check-input" value="Relative"> Relative
+                        </div>
+                    </div>
+                      
+
+
+                 
+
+                    <div class="mb-3">
+                        <label class="form-label">q1.Have you/ your relative ever been 
+                            diagnosed with a heart condition?</label>
+                        <div class="form-check">
+                            <input type="radio" name="diagnosedHeartCondition" class="form-check-input" value="yes"> Yes
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="diagnosedHeartCondition" class="form-check-input" value="No"> No
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <label class="form-label">q2. Have you/ your relative undergone 
+                            any heart-related procedure or 
+                            surgery in the past?</label>
+                        <div class="form-check">
+                            <input type="radio" name="undergoneSurgery" class="form-check-input" value="yes"> Yes
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="undergoneSurgery" class="form-check-input" value="No"> No
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label">q3.Are you/ your relative currently 
+                            experiencing any symptoms that 
+                            might require immediate medical 
+                            attention (e.g., chest pain, shortness 
+                            of breath)?</label>
+                        <div class="form-check">
+                            <input type="radio" name="experiencingSymptoms" class="form-check-input" value="Yes"> Yes
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="experiencingSymptoms" class="form-check-input" value="No"> No
+                        </div>
+                    </div>
+
+                    
+                    <div class="mb-3">
+                        <label class="form-label">q4.Are you/ your relative currently 
+                            undergoing any rehabilitation or 
+                            post-surgery care for your/relative's 
+                            heart?</label>
+                        <div class="form-check">
+                            <input type="radio" name="rehabilitationCare" class="form-check-input" value="Yes"> Yes
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="rehabilitationCare" class="form-check-input" value="No"> No
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <label class="form-label">q5.Are you/ your relative looking for 
+                            general heart health awareness and 
+                            preventive tips?</label>
+                        <div class="form-check">
+                            <input type="radio" name="seekingAwareness" class="form-check-input" value="Yes"> Yes
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="seekingAwareness" class="form-check-input" value="No"> No
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-danger">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+        // Import Firebase modules
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-database.js";
+    
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCSbjez2oI2RP-FnQal--EiXnP3ghsAuzE",
+            authDomain: "red-health-3d881.firebaseapp.com",
+            projectId: "red-health-3d881",
+            storageBucket: "red-health-3d881.firebasestorage.app",
+            messagingSenderId: "162683321988",
+            appId: "1:162683321988:web:5aa21bc2d263dda482ccd1"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+
+        document.getElementById('socialMediaRadio').addEventListener('change', function() {
+            document.getElementById('socialMediaDropdown').style.display = 'block';
+        });
+
+        document.querySelectorAll('input[name="enroll1"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+            if (this.value === "Social Media") {
+                document.getElementById('socialMediaDropdown').style.display = 'block';
+            } else {
+                document.getElementById('socialMediaDropdown').style.display = 'none';
+                document.getElementById('socialMediaDropdown').value = ""; // Reset dropdown selection
+            }
+        });
+    });
+
+        // Handle form submission
+        const form = document.getElementById('patientForm');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent default form submission
+
+           
+            // Collect form data
+            const firstName = document.querySelector('input[name="first-name"]').value;
+            const middleName = document.querySelector('input[name="middle-name"]').value;
+            const lastName = document.querySelector('input[name="last-name"]').value;
+            const age = document.querySelector('input[name="age"]').value;
+            const gender = document.querySelector('input[name="gender"]:checked')?.value;
+            const contact = document.querySelector('input[name="contact"]').value.trim(); // Trim spaces
+            const email = document.querySelector('input[name="email"]').value;
+            const city = document.querySelector('input[name="city"]').value;
+            const state = document.querySelector('input[name="state"]').value;
+    
+            // Additional fields
+            const source = document.querySelector('input[name="enroll1"]:checked')?.value;
+            const socialMediaPlatform = document.getElementById('socialMediaDropdown').value;
+            const enrollType = document.querySelector('input[name="enroll2"]:checked')?.value;
+            const diagnosedHeartCondition = document.querySelector('input[name="diagnosedHeartCondition"]:checked')?.value;   //Q1
+            const undergoneSurgery = document.querySelector('input[name="undergoneSurgery"]:checked')?.value;      //Q2
+            const experiencingSymptoms = document.querySelector('input[name="experiencingSymptoms"]:checked')?.value;  //Q3
+            const rehabilitationCare = document.querySelector('input[name="rehabilitationCare"]:checked')?.value;    //Q4
+            const seekingAwareness = document.querySelector('input[name="seekingAwareness"]:checked')?.value;   //Q5
+    
+            // Ensure contact number is entered
+            if (!contact) {
+                alert("Please enter a valid contact number.");
+                return;
+            }
+    
+            try {
+                const patientsRef = ref(db, 'patients');
+                const snapshot = await get(child(patientsRef, contact));
+    
+                if (snapshot.exists()) {
+                    alert("A patient with this contact number already exists.");
+                    return;
+                }
+    
+                // Create object to store in Firebase
+                const patientData = {
+                    firstName,
+                    middleName,
+                    lastName,
+                    age,
+                    gender,
+                    contact,
+                    email,
+                    city,
+                    state,
+                    enrollType,
+                    diagnosedHeartCondition,
+                    undergoneSurgery,
+                    experiencingSymptoms,
+                    rehabilitationCare,
+                    seekingAwareness,
+                    source,
+                    socialMediaPlatform: source === "Social Media" ? socialMediaPlatform : ""
+                };
+    
+                // Store data in Firebase under 'patients/{contact}'
+                const newPatientRef = ref(db, 'patients/' + contact);
+                await set(newPatientRef, patientData);
+    
+                alert('Patient data successfully submitted!');
+                form.reset(); // Reset form after submission
+            } catch (error) {
+                console.error("Error writing to Firebase Database:", error);
+                alert('There was an error submitting your data. Please try again.');
+            }
+        });
+    </script>
+    
+
+</body>
+</html>
